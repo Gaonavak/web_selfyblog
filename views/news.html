@@ -1,0 +1,58 @@
+<head>
+    <script src="https://kit.fontawesome.com/e44aca08ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/news.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+</head>
+
+<body>
+    <h1>Git 指令总结与心得</h1>
+    <p> 在现代软件开发中，Git 是一个不可或缺的版本控制工具。通过使用 Git，团队能够高效地管理代码，跟踪更改，并进行协作。在以下我的分享中，我将总结一些常用的 Git 指令，并分享我的使用心得。</p>
+
+    <h2>常用 Git 指令</h2>
+    <p>以下是我在日常开发中常用的 Git 指令：</p>
+    <ul>
+        <li><strong>配置用户信息：</strong>
+            <pre><code>git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"</code></pre>
+        </li>
+        <li><strong>初始化仓库：</strong>
+            <pre><code>git init</code></pre>
+        </li>
+        <li><strong>克隆仓库：</strong>
+            <pre><code>git clone &lt;repository_url&gt;</code></pre>
+        </li>
+        <li><strong>查看状态：</strong>
+            <pre><code>git status</code></pre>
+        </li>
+        <li><strong>添加文件：</strong>
+            <pre><code>git add &lt;file&gt;</code></pre>
+        </li>
+        <li><strong>提交更改：</strong>
+            <pre><code>git commit -m "提交信息"</code></pre>
+        </li>
+        <li><strong>推送到远程：</strong>
+            <pre><code>git push origin &lt;branch&gt;</code></pre>
+        </li>
+        <li><strong>拉取更新：</strong>
+            <pre><code>git pull origin &lt;branch&gt;</code></pre>
+        </li>
+        <li><strong>创建新分支：</strong>
+            <pre><code>git branch &lt;branch_name&gt;</code></pre>
+        </li>
+        <li><strong>切换分支：</strong>
+            <pre><code>git checkout &lt;branch_name&gt;</code></pre>
+        </li>
+    </ul>
+
+    <h2>使用心得</h2>
+    <p>通过使用 Git，我深刻意识到版本控制的重要性。它不仅帮助我记录了每一次代码的变更，还能在出现问题时快速回滚到之前的状态。尤其是在团队协作时，Git 的分支管理功能使得多个开发者可以并行开发，减少了代码冲突的可能性。</p>
+
+    <p>在我的日常学习中，常常使用 `git status` 来查看当前的工作状态，以及使用 `git log` 来回顾历史提交，确保对项目的进展有清晰的了解。此外，合理使用 `git stash`
+        可以让我在切换分支时保存当前的更改，非常实用。</p>
+
+    <h2>总结</h2>
+    <p>掌握 Git 指令是每个开发者的必备技能，通过不断实践和总结，我相信能更高效地使用这款强大的工具。在未来的项目中，我会继续深入探索 Git 的更多功能，以提升我的开发效率。</p>
+</body>
+<script>hljs.highlightAll();</script>

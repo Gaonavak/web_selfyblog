@@ -3,7 +3,7 @@ ul {
     list-style: none;  
     align-items: center; 
     justify-content: space-between;
-    padding: 10; 
+    margin: 30 0;
 }
 
 li { 

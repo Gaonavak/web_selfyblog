@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./global.css">
     <link rel="stylesheet" href="./styles/left-section.css">
     <link rel="stylesheet" href="./styles/right-section.css">
-    <script src="./components/background.js" defer></script>
+    <script src="./index.js" defer></script>
     <script src="https://kit.fontawesome.com/e44aca08ad.js" crossorigin="anonymous"></script>
 
 </head>
@@ -20,18 +20,19 @@
     </header>
 
     <div class="container">
-        
+
         <aside class="left-section">
 
             <img src="./images/user.jpg" alt="头像" class="avatar">
-            
+
             <ul class="content-box1">
                 <table style="border-collapse: collapse; width: 100%;">
                     <tr>
                         <td style="padding: 10px; text-align: center;">
                             <i class="fa-solid fa-signature" style="font-size: 25px;"></i>
                         </td>
-                        <td style="font-family: 'Playfair Display', cursive; font-size: 25px; font-weight: bold;">：Gao</td>
+                        <td style="font-family: 'Playfair Display', cursive; font-size: 25px; font-weight: bold;">：Gao
+                        </td>
                     </tr>
                     <tr>
                         <td style="padding: 10px; text-align: center;">
@@ -41,7 +42,7 @@
                     </tr>
                 </table>
             </ul>
-            
+
             <ul class="content-box2">
                 <li>日志：</li>
                 <li>
@@ -50,29 +51,31 @@
             </ul>
 
             <ul class="content-box3">
-                <li><p>💽来一首小曲放松一下</p></li>
-                <li>  
-                    <div class="cd-disk"></div> 
-                </li> 
-                <li>  
+                <li>
+                    <p>💽来一首小曲放松一下</p>
+                </li>
+                <li>
+                    <div class="cd-disk"></div>
+                </li>
+                <li>
                     <audio id="music" controls class="audio">
-                        <source src="./media/audio.flac" type="audio/mpeg"> 
-                        您的浏览器不支持音频元素。 
-                    </audio> 
-                </li> 
+                        <source src="./media/audio.flac" type="audio/mpeg">
+                        您的浏览器不支持音频元素。
+                    </audio>
+                </li>
             </ul>
 
             <ul class="content-box4">
                 <li>
-                    <iframe src="./components/Timeline/timeline.html"  scrolling="no" 
-                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>           
+                    <iframe src="./components/Timeline/timeline.html" scrolling="no"
+                        style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>
                 </li>
             </ul>
 
             <ul class="content-box5">
                 <li>
-                    <iframe src="./components/smallbox/smallbox.html"  scrolling="no"
-                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>     
+                    <iframe src="./components/smallbox/smallbox.html" scrolling="no"
+                        style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>
                 </li>
             </ul>
 
@@ -82,84 +85,62 @@
 
             <ul class="content-box1">
                 <li>
-                    <iframe src="./components/laptops/laptop.html"  scrolling="no"
-                    style="border:none; width:100%; height:200px; display:block; margin: 0 auto;"></iframe>                         
+                    <iframe src="./components/laptops/laptop.html" scrolling="no"
+                        style="border:none; width:100%; height:200px; display:block; margin: 0 auto;"></iframe>
                 </li>
                 <li>
                     <h1>Hi , I'm <span>Gao</span> 🙌</h1>
                     <h2>欢迎来到我的个人blog！！</h2>
-                    <h3>基于HTML和css的个人web网页</h3>      
+                    <h3>基于HTML和css的个人web网页</h3>
                 </li>
             </ul>
 
             <ul class="content-box2">
                 <li>
-                    <iframe src="./components/people/people.html"  scrolling="no"
-                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>     
+                    <iframe src="./components/people/people.html" scrolling="no"
+                        style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>
                 </li>
             </ul>
 
             <ul class="content-box2">
-                <li>
-                             
-                </li>
-            </ul>
-
-            <ul class="content-box2">
-                <h1>🎥 Video    </h1>
+                <h1>🎥 Video </h1>
                 <video width="100%" controls>
                     <source src="./media/video.MOV" type="video/mp4">
                     您的浏览器不支持视频播放。
                 </video>
             </ul>
 
-            <ul class="content-box2">
-                <form action="submit.php" method="post">
-                    <label for="username">用户名:</label>
-                    <input type="text" id="username" name="username"><br><br>
-                    <label for="email">邮箱:</label>
-                    <input type="email" id="email" name="email"><br><br>
-                    <input type="submit" value="提交">
-                </form>   
-            </ul>
+            <div class="content-box3" style="height: 1900px;">
+                <h1>👀 Share</h1>
+                <iframe src="./views/news.html" scrolling="no"
+                    style="border:none; width:100%; height:1750px; display:block; margin: 0 auto;object-fit: contain;   border-radius: 12px;"></iframe>
+            </div>
 
-            <ul class="content-box2">
-                <h1>📋 表格</h1>
-                <table border="1" width="100%">
-                    <tr>
-                        <th>名称</th>
-                        <th>年龄</th>
-                        <th>职业</th>
-                    </tr>
-                    <tr>
-                        <td>张三</td>
-                        <td>30</td>
-                        <td>工程师</td>
-                    </tr>
-                    <tr>
-                        <td>李四</td>
-                        <td>25</td>
-                        <td>设计师</td>
-                    </tr>
-                </table>
-            </ul>
-            
-            <ul class="content-box2">
-                <h1>✉️ 表单</h1>
-                <form action="submit.php" method="post">
-                    <label for="name">姓名:</label>
-                    <input type="text" id="name" name="name"><br><br>
-                    <label for="age">年龄:</label>
-                    <input type="number" id="age" name="age"><br><br>
-                    <input type="submit" value="提交">
+            <ul class="content-box3">
+                <h1>📝 Comment</h1>
+                <form onsubmit="handleSubmit(event)">
+                    <table>
+                        <tr>
+                            <td><label for="username">用户名:</label></td>
+                            <td><input type="text" id="username" name="username"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">邮箱:</label></td>
+                            <td><input type="email" id="email" name="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="age">年龄:</label></td>
+                            <td><input type="number" id="age" name="age"></td>
+                        </tr>
+                        <td colspan="2" style="text-align:center;">
+                            <button type="submit" style="margin-top: 20px;">
+                                提交
+                            </button>
+                        </td>
+                    </table>
                 </form>
             </ul>
-            
-            <ul class="content-box2">
-                <h1>📝 自定义内容</h1>
-                <p>你可以在这里添加你的自定义内容，比如文本、图片等。</p>
-            </ul>
-            
+
         </aside>
     </div>
     <footer class="footer">

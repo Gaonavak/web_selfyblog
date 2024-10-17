@@ -62,3 +62,16 @@ audio.addEventListener('pause', () => {
 audio.addEventListener('ended', () => {
     disk.classList.remove('rotate');
 });
+
+
+function handleSubmit(event) {
+    event.preventDefault();
+    alert('响应成功'); 
+}
+
+function reloadInterface() {
+    document.getElementById('./index.html').innerHTML = '';
+
+    initializeUIComponents(); 
+    reload3DEffects(); 
+}
