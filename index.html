@@ -6,28 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gao's blogs</title>
     <link rel="stylesheet" href="./global.css">
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="./background.js" defer></script>
+    <link rel="stylesheet" href="./styles/left-section.css">
+    <link rel="stylesheet" href="./styles/right-section.css">
+    <script src="./components/background.js" defer></script>
+    <script src="https://kit.fontawesome.com/e44aca08ad.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <canvas id="waterCanvas"></canvas>
     <header class="navbar">
-        <iframe src="./views/Navbar/navbar.html"></iframe>
+        <iframe src="./views/navbar.html"></iframe>
     </header>
 
     <div class="container">
         <aside class="left-section">
-            <iframe src="./views/container/left-section.html" ></iframe>
+
+            <img src="./images/user.jpg" alt="头像" class="avatar">
+            
+            <ul class="content-box1">
+                <li>
+                    <i class="fa-solid fa-signature"></i>: Gao
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> : ShanTou 
+                </li>
+            </ul>
+
+            <ul class="content-box2">
+                <li>日志：</li>
+                <li>
+                    <a href="https://example.com" target="_blank">点击查看日志</a>
+                </li>
+            </ul>
+
+            <ul class="content-box3">
+                <li><p>💽来一首小曲放松一下</p></li>
+                <li> 
+                    <audio controls>
+                        <source src="./audio/sample.mp3" type="audio/mpeg">
+                        您的浏览器不支持音频元素。
+                    </audio>
+                </li>
+            </ul>
         </aside>
 
         <aside class="right-section">
-            <iframe src="./views/container/right-section.html"></iframe>
+
+            <ul class="content-box1">
+                <li>
+                    <iframe src="./components/laptops/laptop.html"  scrolling="no"
+                    style="border:none; width:100%; height:200px; display:block; margin: 0 auto;"></iframe>                         
+                </li>
+                <li>
+                    <h1>Hi , I'm <span>Gao</span> 🙌</h1>
+                    <h2>欢迎来到我的个人blog！！</h2>
+                    <h3>基于HTML和css的个人web网页</h3>      
+                </li>
+            </ul>
+
+            <ul class="content-box2">
+                <li>
+                    <iframe src="./components/people/people.html"  scrolling="no"
+                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>     
+                </li>
+            </ul>
+
+            <div class="content-box3"> 
+                    <iframe src="./components/slidecard/slidecard.html"  scrolling="no"
+                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe> 
+            </div>
+
+            <ul class="content-box2">
+                <video width="200" controls>
+                    <source src="./videos/sample.mp4" type="video/mp4">
+                    您的浏览器不支持视频播放。
+                </video>
+            </ul>
+
+            <ul class="content-box3">
+                <form action="submit.php" method="post">
+                    <label for="username">用户名:</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="email">邮箱:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <input type="submit" value="提交">
+                </form>   
+            </ul>
+
         </aside>
     </div>
-
     <footer class="footer">
-        <iframe src="./views/footer/footer.html"></iframe>
+        <iframe src="./views/footer.html"></iframe>
     </footer>
 </body>
 

@@ -18,7 +18,7 @@ for (let i = 0; i < waveCount; i++) {
 
 function animate() { 
     requestAnimationFrame(animate); 
-    ctx.fillStyle = 'rgba(0, 0, 0, 0.03)';
+    ctx.fillStyle = '#fff';
     ctx.fillRect(0, 0, canvas.width, canvas.height); 
 
     waves.forEach((wave, index) => { 
