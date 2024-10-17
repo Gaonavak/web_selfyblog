@@ -1,0 +1,58 @@
+/* 整体时间轴容器样式 */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 600px; /* 设置时间轴的最大宽度 */
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px; /* 时间线的位置 */
+    width: 2px;
+    height: 100%;
+    background-color: #ccc; /* 时间线颜色 */
+}
+
+/* 时间轴节点容器 */
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    padding-left: 80px; /* 为时间点和内容留出空间 */
+}
+
+/* 每个节点的时间点圆圈 */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #007bff; /* 圆点颜色 */
+    border-radius: 50%;
+    border: 2px solid #fff; /* 圆点外边框 */
+    box-shadow: 0 0 0 2px #ccc; /* 外部阴影 */
+}
+
+/* 节点内容样式 */
+.timeline-content {
+    background-color: #f9f9f9; /* 内容背景颜色 */
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.timeline-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}

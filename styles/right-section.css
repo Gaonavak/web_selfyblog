@@ -40,9 +40,8 @@ span{
 }
 
 .right-section .content-box3{
-    flex-direction: column;
-    justify-content: space-between; 
     background: transparent;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
 }
+

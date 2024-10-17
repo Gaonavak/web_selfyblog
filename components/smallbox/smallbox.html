@@ -1,0 +1,27 @@
+<head> 
+    <script> 
+        function triggerFirework() {
+            new ParticleFirework({ 
+                elementId: 'myElement', 
+                duration: 450, 
+                delay: 1, 
+                numParticles: 200, 
+                colors: ['#ff0000', '#00ff00', '#0000ff'], 
+                size: 8, 
+                shape: 'square',  
+                spread: 3 
+            });
+            setTimeout(triggerFirework, 10000);
+        }
+
+        window.onload = () => {
+            triggerFirework();  
+        };
+    </script> 
+    <link rel="stylesheet" href="./smallbox.css"> 
+    <script src="./smallbox.js" defer></script> 
+</head> 
+ 
+<body> 
+    <div id="myElement"></div> 
+</body>

@@ -7,8 +7,8 @@
   } 
 
 .avatar { 
-    width: 100px;
-    height: 100px; 
+    width: 150px;
+    height: 150px; 
     border-radius: 50%; 
     margin: 10px;  
     object-fit: cover;  
@@ -18,24 +18,94 @@
 .left-section .content-box1{
     height: 100px;
     flex-direction: column;
-    background:#fff;
+    background: linear-gradient(90deg,
+    rgb(232, 184, 255),
+    rgb(255, 221, 199));
 }
 
 .left-section .content-box2 {
     height: 100px;
     flex-direction: column;
-    background:#fff;
+    background: linear-gradient(90deg,
+    rgb(232, 184, 255),
+    rgb(255, 221, 199));
 }
 
 .left-section .content-box3 {
     height: 200px;
     flex-direction: column;
-    background:#fff;
+    background: linear-gradient(90deg,
+    rgb(232, 184, 255),
+    rgb(255, 221, 199));
     align-items: center;
     justify-content: space-evenly;
     padding: 0;
 }
 
 p{
-    font-size: clamp(10px,4vw,22px);
+    font-size: clamp(12px,4vw,22px);
+}
+
+.cd-disk { 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    background: url('../images/cd.png') no-repeat center; 
+    background-size: cover; 
+    margin: 0 auto; 
+} 
+
+.rotate {
+    animation: spin 5s linear infinite;
+}
+
+@keyframes spin { 
+    from { 
+        transform: rotate(0deg); 
+    } 
+    to { 
+        transform: rotate(360deg); 
+    } 
+} 
+
+.content-box3 { 
+    list-style: none; 
+    text-align: center; 
+} 
+ 
+.content-box3 p { 
+    font-size: 18px; 
+}
+
+.audio {
+    width: 200px;
+    height: 40px;
+    border: 5px solid rgb(198, 177, 243);
+    border-radius: 17px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    outline: none;
+    margin: 10px auto;
+    display: block;
+}
+
+.left-section .content-box4 {
+    height: 200px;
+    flex-direction: column;
+    background: linear-gradient(90deg,
+    rgb(232, 184, 255),
+    rgb(255, 221, 199));
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.left-section .content-box5 {
+    height: 200px; 
+    flex-direction: column; 
+    background: transparent; 
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0; 
+    margin-top: auto; 
+    box-shadow: 0 0 0; 
 }

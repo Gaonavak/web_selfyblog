@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/right-section.css">
     <script src="./components/background.js" defer></script>
     <script src="https://kit.fontawesome.com/e44aca08ad.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -19,35 +20,62 @@
     </header>
 
     <div class="container">
+        
         <aside class="left-section">
 
             <img src="./images/user.jpg" alt="头像" class="avatar">
             
             <ul class="content-box1">
-                <li>
-                    <i class="fa-solid fa-signature"></i>: Gao
-                </li>
-                <li>
-                    <i class="fa-solid fa-location-dot" style="margin-right: 5px;"></i> : ShanTou 
-                </li>
+                <table style="border-collapse: collapse; width: 100%;">
+                    <tr>
+                        <td style="padding: 10px; text-align: center;">
+                            <i class="fa-solid fa-signature" style="font-size: 25px;"></i>
+                        </td>
+                        <td style="font-family: 'Playfair Display', cursive; font-size: 25px; font-weight: bold;">：Gao</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; text-align: center;">
+                            <i class="fa-solid fa-location-dot" style="font-size:25px;"></i>
+                        </td>
+                        <td style="font-size: clamp(5px,4vw,20px); font-weight: bold;">：ShanTou </td>
+                    </tr>
+                </table>
             </ul>
-
+            
             <ul class="content-box2">
                 <li>日志：</li>
                 <li>
-                    <a href="https://example.com" target="_blank">点击查看日志</a>
+                    <a href="https://example.com" target="_blank"> 点击查看日志</a>
                 </li>
             </ul>
 
             <ul class="content-box3">
                 <li><p>💽来一首小曲放松一下</p></li>
-                <li> 
-                    <audio controls>
-                        <source src="./audio/sample.mp3" type="audio/mpeg">
-                        您的浏览器不支持音频元素。
-                    </audio>
+                <li>  
+                    <div class="cd-disk"></div> 
+                </li> 
+                <li>  
+                    <audio id="music" controls class="audio">
+                        <source src="./media/audio.flac" type="audio/mpeg"> 
+                        您的浏览器不支持音频元素。 
+                    </audio> 
+                </li> 
+            </ul>
+
+            <ul class="content-box4">
+                <li>
+                    <iframe src="./components/Timeline/timeline.html"  scrolling="no" 
+                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>           
                 </li>
             </ul>
+
+            <ul class="content-box5">
+                <li>
+                    <iframe src="./components/smallbox/smallbox.html"  scrolling="no"
+                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe>     
+                </li>
+            </ul>
+
         </aside>
 
         <aside class="right-section">
@@ -71,19 +99,21 @@
                 </li>
             </ul>
 
-            <div class="content-box3"> 
-                    <iframe src="./components/slidecard/slidecard.html"  scrolling="no"
-                    style="border:none; width:100%; height:100%; display:block; margin: 0 auto;object-fit: contain;"></iframe> 
-            </div>
+            <ul class="content-box2">
+                <li>
+                             
+                </li>
+            </ul>
 
             <ul class="content-box2">
-                <video width="200" controls>
-                    <source src="./videos/sample.mp4" type="video/mp4">
+                <h1>🎥 Video    </h1>
+                <video width="100%" controls>
+                    <source src="./media/video.MOV" type="video/mp4">
                     您的浏览器不支持视频播放。
                 </video>
             </ul>
 
-            <ul class="content-box3">
+            <ul class="content-box2">
                 <form action="submit.php" method="post">
                     <label for="username">用户名:</label>
                     <input type="text" id="username" name="username"><br><br>
@@ -93,6 +123,43 @@
                 </form>   
             </ul>
 
+            <ul class="content-box2">
+                <h1>📋 表格</h1>
+                <table border="1" width="100%">
+                    <tr>
+                        <th>名称</th>
+                        <th>年龄</th>
+                        <th>职业</th>
+                    </tr>
+                    <tr>
+                        <td>张三</td>
+                        <td>30</td>
+                        <td>工程师</td>
+                    </tr>
+                    <tr>
+                        <td>李四</td>
+                        <td>25</td>
+                        <td>设计师</td>
+                    </tr>
+                </table>
+            </ul>
+            
+            <ul class="content-box2">
+                <h1>✉️ 表单</h1>
+                <form action="submit.php" method="post">
+                    <label for="name">姓名:</label>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="age">年龄:</label>
+                    <input type="number" id="age" name="age"><br><br>
+                    <input type="submit" value="提交">
+                </form>
+            </ul>
+            
+            <ul class="content-box2">
+                <h1>📝 自定义内容</h1>
+                <p>你可以在这里添加你的自定义内容，比如文本、图片等。</p>
+            </ul>
+            
         </aside>
     </div>
     <footer class="footer">

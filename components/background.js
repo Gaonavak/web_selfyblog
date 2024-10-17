@@ -46,3 +46,19 @@ window.addEventListener('resize', () => {
         wave.y = (canvas.height / 2) - 100 + Math.random() * 200; 
     }); 
 }); 
+
+
+const audio = document.getElementById('music');
+const disk = document.querySelector('.cd-disk');
+
+audio.addEventListener('play', () => {
+    disk.classList.add('rotate');
+});
+
+audio.addEventListener('pause', () => {
+    disk.classList.remove('rotate');
+});
+
+audio.addEventListener('ended', () => {
+    disk.classList.remove('rotate');
+});
